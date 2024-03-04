@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    body {
+        @apply font-[Questrial];
+    }     
+    li {
+        @apply px-4;
+        @apply cursor-pointer;
+    }  
+}
+
+/*SLIDE-UP ANIMATION*/
+@keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hidden-initial {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .slide-up {
+    animation: slideUp 1.0s ease-out forwards;
+  }
+  
+  /*Project Cards CSS*/
+  .content-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+  }
+
+  .content-div:hover {
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 176, 173, 0.8),
+      hsla(4, 37%, 50%, 0.8)
+    )!important;
+  }
