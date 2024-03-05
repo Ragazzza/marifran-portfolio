@@ -1,5 +1,6 @@
 import React from 'react'
 import Profile from '../assets/profile_wdog.png'
+import WIP from '../assets/WIP.png'
 import { useInView } from 'react-intersection-observer';
 
 export const Home = () => {
@@ -15,6 +16,7 @@ export const Home = () => {
         {/* Container */}
         <div ref={refFirstDiv} className={`max-w-screen-1xl mx-auto flex flex-col items-center justify-center h-full px-10 md:flex-row ${inViewFirstDiv ? 'slide-up' : 'hidden-initial'}`}>
             <div className='flex flex-col justify-center h-full'>
+                <img src={WIP} alt="WIP Image" className='pt-4 hidden md:block mx-auto w-[200px]' />  
                 <p className='text-2xl md:text-3xl'>Hello, I'm</p>
                 <h1  className='text-4xl md:text-7xl font-bold text-[#463333]'>Marifran Malinao</h1>
                 <p className='text-2xl md:text-3xl'>Computer Engineer</p>
