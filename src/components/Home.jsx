@@ -45,8 +45,8 @@ export const Home = () => {
     <div name='home' className='w-full h-screen bg-gradient-to-b from-[#FFF0F0] to-[#EBD4D4]'>
 
       {/* Container */}
-      <div ref={refFirstDiv} className={`max-w-screen-1xl mx-auto flex flex-col items-center justify-center h-full px-10 md:flex-row ${inViewFirstDiv ? 'slide-up' : 'hidden-initial'}`}>
-        <div className='flex flex-col justify-center h-full'>
+      <div className= 'max-w-screen-1xl mx-auto flex flex-col items-center justify-center h-full px-10 md:flex-row'>
+        <div ref={refFirstDiv} className={`flex flex-col justify-center h-full ${inViewFirstDiv ? 'slide-up' : 'hidden-initial'}`}>
           <img src={WIP} alt="WIP Image" className='pt-4 pb-4 hidden md:block mx-auto w-[200px]' />
           <img src={ProfileSmall} alt="Profile Image" className='block mx-auto w-[180px] pb-4 md:hidden' />
           <p className='text-2xl md:text-3xl'>Hello, my name's</p>
