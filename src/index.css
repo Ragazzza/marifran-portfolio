@@ -51,3 +51,21 @@
       hsla(4, 37%, 50%, 0.8)
     )!important;
   }
+
+  /*SLIDE-SIDER ANIMATION*/
+  @keyframes slideInFromCorner {
+    from {
+      transform: translateX(-100vw) translateY(-100vh);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-in-corner {
+    animation: slideInFromCorner 1.5s ease-out forwards;
+  }
+  
+  

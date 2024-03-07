@@ -1,4 +1,5 @@
 import React from 'react';
+import Golden_1 from '../assets/Golden_1.png'
 import { useInView } from 'react-intersection-observer';
 
 export const About = () => {
@@ -19,6 +20,11 @@ export const About = () => {
       {/* Container */}
       <div className='flex flex-col justify-center items-center w-full h-full'>
         
+        {/* Side Designs */}
+        {/* <div className='w-full flex justify-between slide-in-corner'>
+          <img src={Golden_1} alt="Golden 1" className='absolute w-[300px] z-0' />
+        </div> */}
+      
         {/* Title */}
         <div ref={refFirstDiv} className={`max-w-[1000px] w-full grid grid-cols-2 gap-8 ${inViewFirstDiv ? 'slide-up' : 'hidden-initial'}`}>
           <div className='sm:text-right pb-8 pl-4'>
