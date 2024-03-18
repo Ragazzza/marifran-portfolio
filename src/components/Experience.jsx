@@ -23,7 +23,7 @@ const Experience = () => {
 
         {/* Title */}
         <div ref={refFirstDiv} className={`w-90 ${inViewFirstDiv ? 'slide-up' : 'hidden-initial'}`}>
-            <p className='text-4xl font-bold border-b-4 border-pink-500 text-center'>
+            <p className='text-2xl font-bold border-b-4 border-pink-500 text-center sm:text-4xl'>
               My Experiences
             </p>
         </div>
@@ -32,24 +32,26 @@ const Experience = () => {
         <div ref={refSecondDiv} className={`max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 pt-10 ${inViewSecondDiv ? 'slide-up' : 'hidden-initial'}`}>
 
           {/* Education Card */}
-            <div className='pt-10 pr-7 pl-7 pb-10 b-8border-2 border-[#835858] rounded-2xl bg-[#463333]'> 1
-                <p className='text-2xl text-center text-[#EBD4D4]'>Education</p>
+            <div className='pt-10 pr-7 pl-7 pb-10 b-8 border-2 border-[#835858] rounded-2xl bg-[#463333]'>
+                <p className='text-xl text-center text-[#EBD4D4] font-bold sm:text-2xl'>University of San Carlos</p>
                 <div className='flex justify-center items-center'>
-                    <img src={USC} alt="USC" className='w-[130px]'/> 
+                    <img src={USC} alt="USC" className='w-[70px] sm:w-[130px]'/> 
                 </div>
-                <p className='text-1xl text-center text-[#EBD4D4]'>August 2018-December 2023</p>
-                <p className='text-[#EBD4D4] text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p className='text-lg text-center text-[#EBD4D4] font-bold sm:text-xl'>Bachelor's Degree in Computer Engineering</p>
+                <p className='text-base text-center text-[#EBD4D4] sm:text-lg'>August 2018-December 2023</p>
+                <p className='text-[#EBD4D4] text-justify pt-2'>During my 2nd year of college, I was part of the Computer Engineering Council 2019 in the Socio-cultural Committee. 
+                This is where I got my interest in Web Development where my thesis groupmates and I created an Online Grocery for the USC Coop Mart.</p>
             </div>
             {/* Internship Card */}
             <div className='pt-10 pr-7 pl-7 pb-10 b-8 border-2 border-[#835858] rounded-2xl bg-[#463333]'>
-                <p className='text-2xl text-center text-[#EBD4D4]'>Internship</p>
+                <p className='text-xl text-center text-[#EBD4D4] font-bold sm:text-2xl'>Alliance Software Inc.</p>
                 <div className='flex justify-center items-center'>
-                    <img src={Alliance} alt="Alliance" className='w-[130px]'/> 
+                    <img src={Alliance} alt="Alliance" className='w-[70px] sm:w-[130px]'/> 
                 </div>  
-                <p className='text-1xl text-center text-[#EBD4D4]'>March 2023-July 2023</p>
-                <p className='text-[#EBD4D4] text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p className='text-lg text-center text-[#EBD4D4] font-bold sm:text-xl'>Quality Assurance Intern</p>
+                <p className='text-base text-center text-[#EBD4D4] sm:text-lg'>March 2023-July 2023</p>
+                <p className='text-[#EBD4D4] text-justify pt-2'>During my internship, I created and updated Unit Test Cases and Integration Test Cases for the project, executed 
+                Unit Test Cases with other Quality Assurance testers and reported bugs and issues to the developers.</p>
             </div>
 
         </div>

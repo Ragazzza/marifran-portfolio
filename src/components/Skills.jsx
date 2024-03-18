@@ -29,43 +29,42 @@ const Skills = () => {
 
         {/* Title */}
         <div ref={refFirstDiv} className={`${inViewFirstDiv ? 'slide-up' : 'hidden-initial'}`}>
-          <p className='text-4xl font-bold inline border-b-4 border-pink-600'>My Skills</p>
-          <p className='py-4'>These are all the skills that I think I can do...</p>
+          <p className='text-2xl font-bold inline border-b-4 border-pink-600 sm:text-4xl'>My Skills</p>
         </div>
 
         {/* Grid Container */}
         <div ref={refSecondDiv} className={`w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 ${inViewSecondDiv ? 'slide-up' : 'hidden-initial'}`}>
           {/* Skill Cards */}
           <div className='shadow-md shadow-[#835858] hover:scale-110 duration-500'>
-            <img src={CSharp} alt="CSharp Logo" className='mx-auto'/>
+            <img src={CSharp} alt="CSharp Logo" className='w-[60px] mx-auto sm:w-[100px]'/>
             <p className='my-4'>C#</p>
           </div>
           <div className='shadow-md shadow-[#835858] hover:scale-110 duration-500'>
-            <img src={REACT} alt="REACT Logo" className='mx-auto'/>
+            <img src={REACT} alt="REACT Logo" className='w-[60px] mx-auto sm:w-[100px]'/>
             <p className='my-4'>REACT</p>
           </div>
           <div className='shadow-md shadow-[#835858] hover:scale-110 duration-500'>
-            <img src={JavaScript} alt="JavaScript Logo" className='mx-auto'/>
+            <img src={JavaScript} alt="JavaScript Logo" className='w-[60px] mx-auto sm:w-[100px]'/>
             <p className='my-4'>JavaScript</p>
           </div>
           <div className='shadow-md shadow-[#835858] hover:scale-110 duration-500'>
-            <img src={HTML} alt="HTML Logo" className='mx-auto'/>
+            <img src={HTML} alt="HTML Logo" className='w-[60px] mx-auto sm:w-[100px]'/>
             <p className='my-4'>HTML</p>
           </div>
           <div className='shadow-md shadow-[#835858] hover:scale-110 duration-500'>
-            <img src={CSS} alt="CSS Logo" className='mx-auto'/>
+            <img src={CSS} alt="CSS Logo" className='w-[60px] mx-auto sm:w-[100px]'/>
             <p className='my-4'>CSS</p>
           </div>
           <div className='shadow-md shadow-[#835858] hover:scale-110 duration-500'>
-            <img src={DotNet} alt="DotNet Logo" className='mx-auto'/>
+            <img src={DotNet} alt="DotNet Logo" className='w-[60px] mx-auto sm:w-[100px]'/>
             <p className='my-4'>ASP.NET</p>
           </div>
           <div className='shadow-md shadow-[#835858] hover:scale-110 duration-500'>
-            <img src={VisualStudio} alt="VisualStudio Logo" className='mx-auto'/>
+            <img src={VisualStudio} alt="VisualStudio Logo" className='w-[60px] mx-auto sm:w-[100px]'/>
             <p className='my-4'>Visual Studio</p>
           </div>
           <div className='shadow-md shadow-[#835858] hover:scale-110 duration-500'>
-            <img src={VSCode} alt="VSCode Logo" className='mx-auto'/>
+            <img src={VSCode} alt="VSCode Logo" className='w-[60px] mx-auto sm:w-[100px]'/>
             <p className='my-4'>Visual Studio Code</p>
           </div>
         </div>
