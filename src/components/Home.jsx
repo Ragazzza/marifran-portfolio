@@ -42,7 +42,7 @@ export const Home = () => {
   }, [text, isDeleting, textIndex, typingSpeed]);
 
   return (
-    <div name='home' className='w-full h-screen bg-gradient-to-b from-[#FFF0F0] to-[#EBD4D4]'>
+    <div name='home' className='w-full h-screen bg-gradient-to-b from-[#EBD4D4] to-[#EBD4D4]'>
 
       {/* Container */}
       <div className= 'max-w-screen-1xl mx-auto flex flex-col items-center justify-center h-full px-10 md:flex-row'>

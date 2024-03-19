@@ -36,17 +36,17 @@ export const About = () => {
         
         {/* Description */}
         <div ref={refSecondDiv} className={`max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4 ${inViewSecondDiv ? 'slide-up' : 'hidden-initial'}`}>
-          <div className='text-2xl font-bold text-center sm:text-4xl border-r-4 border-[#463333]'>
+          <div className='text-2xl font-bold text-center sm:text-4xl'>
             <p>You can just call me Maan!</p>
           </div>
-          <div>
-            <p> I am an aspiring Software Engineer who possesses the skills in Web Development and Quality Assurance 
-              Testing. I I am highly motivated to enhance my skills in programming and make meaningful contributions to 
+          <div className='border-l-4 border-[#463333]'>
+            <p className='pl-4'> I am an aspiring Software Engineer who possesses the skills in Web Development and Quality Assurance 
+              Testing. I am highly motivated to enhance my skills in programming and make meaningful contributions to 
               any projects.  </p>
           </div>
-          <div className='border-r-4 border-[#463333]'></div>
-          <div>
-            <p>Outside of work, I enjoy my free time trying to be creative, playing video games, watching my favorite 
+          <div></div>
+          <div className='border-l-4 border-[#463333]'>
+            <p className='pl-4'>Outside of work, I enjoy my free time trying to be creative, playing video games, watching my favorite 
               shows on repeat, going out on food trips and play with dogs! :3 </p>
           </div>
         </div>

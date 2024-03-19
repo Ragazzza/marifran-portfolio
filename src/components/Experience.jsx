@@ -16,14 +16,14 @@ const Experience = () => {
   });
 
   return (
-    <div name='experience' className='w-full h-screen bg-[#EBD4D4] text-[#463333]'>
+    <div name='experience' className='w-full h-auto bg-[#EBD4D4] text-[#463333] pt-16 pb-16 sm:h-screen'>
 
       {/* Container */}
       <div className='flex flex-col justify-center items-center w-full h-full'>
 
         {/* Title */}
         <div ref={refFirstDiv} className={`w-90 ${inViewFirstDiv ? 'slide-up' : 'hidden-initial'}`}>
-            <p className='text-2xl font-bold border-b-4 border-pink-500 text-center sm:text-4xl'>
+            <p className='text-2xl font-bold border-b-4 border-[#EDAAAA] text-center sm:text-4xl'>
               My Experiences
             </p>
         </div>
@@ -38,7 +38,7 @@ const Experience = () => {
                     <img src={USC} alt="USC" className='w-[70px] sm:w-[130px]'/> 
                 </div>
                 <p className='text-lg text-center text-[#EBD4D4] font-bold sm:text-xl'>Bachelor's Degree in Computer Engineering</p>
-                <p className='text-base text-center text-[#EBD4D4] sm:text-lg'>August 2018-December 2023</p>
+                <p className='text-base text-center text-[#EBD4D4] sm:text-lg'>August 2018-January 2024</p>
                 <p className='text-[#EBD4D4] text-justify pt-2'>During my 2nd year of college, I was part of the Computer Engineering Council 2019 in the Socio-cultural Committee. 
                 This is where I got my interest in Web Development where my thesis groupmates and I created an Online Grocery for the USC Coop Mart.</p>
             </div>

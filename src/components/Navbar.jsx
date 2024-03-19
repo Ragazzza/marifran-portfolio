@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {FaBars, FaTimes, FaLinkedin, FaGithub, FaFacebook, FaInstagram} from 'react-icons/fa'
-import Logo from '../assets/logo.png'
+import LogoLight from '../assets/logo_light.png'
 import {Link} from 'react-scroll'
 
 
@@ -9,10 +9,10 @@ const Navbar = () => {
         const handleClick = () =>   setNav(!nav)
 
   return (
-    <div className='fixed w-full h-[80px] z-10 flex justify-between items-center px-4 bg-[#FFF0F0] text-[#463333]'>
+    <div className='fixed w-full h-[80px] z-10 flex justify-between items-center px-4 shadow-md bg-[#463333] text-[#FFF0F0]'>
         <div>
             <Link to="home" smooth={true} duration={500}>
-                <img src={Logo} alt="Logo Image" style={{width: '80px'}}/>
+                <img src={LogoLight} alt="Logo Image" style={{width: '80px'}}/>
             </Link>
         </div>
         {/* Menu */}
@@ -40,12 +40,22 @@ const Navbar = () => {
         </div>
 
             {/* Mobile Menu */}
-            <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#FFF0F0] flex flex-col justify-center items-center'}>
-                <li className='py-6 text-4xl'>About</li>
-                <li className='py-6 text-4xl'>Experience</li>
-                <li className='py-6 text-4xl'>Skills</li>
-                <li className='py-6 text-4xl'>Projects</li>
-                <li className='py-6 text-4xl'>Contact</li>
+            <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#463333] flex flex-col justify-center items-center'}>
+                <li className='py-6 text-4xl'>
+                    <Link onClick={handleClick} to="about" smooth={true} duration={500}>About</Link>
+                </li>
+                <li className='py-6 text-4xl'>
+                    <Link onClick={handleClick} to="experience" smooth={true} duration={500}>Experience</Link>
+                </li>
+                <li className='py-6 text-4xl'>
+                    <Link onClick={handleClick} to="skills" smooth={true} duration={500}>Skills</Link>
+                </li>
+                <li className='py-6 text-4xl'>
+                    <Link onClick={handleClick} to="projects" smooth={true} duration={500}>Projects</Link>
+                </li>
+                <li className='py-6 text-4xl'>
+                    <Link onClick={handleClick} to="contact" smooth={true} duration={500}>Contact</Link>
+                </li>
             </ul>
 
         {/* Social Icons */}
